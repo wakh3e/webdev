@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VUTutors — Peer tutoring for VUT students</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="VUTutors home">
+      <span class="logo-vu">VU</span><span class="logo-tutors">Tutors</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#tutors">Find a Tutor</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-ghost">Log In</a>
+        <a href="contact.html" class="btn btn-solid">Become a Tutor</a>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Find the right tutor for your modules</h1>
+      <p class="hero-dek">Peer-to-peer tutoring by VUT students who've passed the course — for Maths, Programming, Accounting, Engineering and more.</p>
+      <div class="hero-actions">
+        <a href="#tutors" class="btn btn-solid btn-lg">Browse Tutors</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Become a Tutor</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="stat-number" data-target="240">0</span><span class="stat-label">active tutors</span></div>
+        <div><span class="stat-number" data-target="18">0</span><span class="stat-label">faculties covered</span></div>
+        <div><span class="stat-number" data-target="1900">0</span><span class="stat-label">sessions booked</span></div>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=60" alt="Students studying together at a campus table">
+    </figure>
+  </section>
+
+  <section class="features">
+    <h2>Why students use VUTutors</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">✓</div>
+        <h3>Verified VUT students</h3>
+        <p>Every tutor has passed the module they teach, with results checked before they're listed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">R</div>
+        <h3>Student-friendly rates</h3>
+        <p>Hourly rates set by students, for students — with free first sessions from some tutors.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">⏱</div>
+        <h3>Flexible scheduling</h3>
+        <p>Book one-on-one or small group sessions around your timetable, on campus or online.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🎓</div>
+        <h3>All faculties covered</h3>
+        <p>From first-year Maths to final-year design projects, across every VUT faculty.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tutors" id="tutors">
+    <div class="tutors-heading">
+      <h2>Available tutors</h2>
+      <div class="filter-bar" role="group" aria-label="Filter tutors by subject">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="maths">Maths &amp; Stats</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="accounting">Accounting</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+      </div>
+    </div>
+
+    <div class="tutor-grid" id="tutor-grid">
+
+      <article class="tutor-card" data-subject="programming">
+        <span class="badge badge-top">Top rated</span>
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=60" alt="Portrait of tutor Lindiwe Zulu">
+        <h3>Lindiwe Zulu</h3>
+        <p class="tutor-subject">Java &amp; C# Programming</p>
+        <p class="tutor-meta">Diploma in IT, 3rd year</p>
+        <p class="tutor-rate">R180 <span>/ hour</span></p>
+        <a href="contact.html" class="btn btn-outline btn-sm">View Profile</a>
+      </article>
+
+      <article class="tutor-card" data-subject="maths">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=60" alt="Portrait of tutor Karabo Mahlangu">
+        <h3>Karabo Mahlangu</h3>
+        <p class="tutor-subject">Engineering Mathematics</p>
+        <p class="tutor-meta">BEng Electrical, graduate tutor</p>
+        <p class="tutor-rate">R150 <span>/ hour</span></p>
+        <a href="contact.html" class="btn btn-outline btn-sm">View Profile</a>
+      </article>
+
+      <article class="tutor-card" data-subject="accounting">
+        <span class="badge badge-new">New</span>
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt="Portrait of tutor Ayesha Patel">
+        <h3>Ayesha Patel</h3>
+        <p class="tutor-subject">Financial Accounting</p>
+        <p class="tutor-meta">BCom Accounting, 2nd year</p>
+        <p class="tutor-rate">R140 <span>/ hour</span></p>
+        <a href="contact.html" class="btn btn-outline btn-sm">View Profile</a>
+      </article>
+
+      <article class="tutor-card" data-subject="engineering">
+        <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=400&q=60" alt="Portrait of tutor Thabo Nkosi">
+        <h3>Thabo Nkosi</h3>
+        <p class="tutor-subject">Electrical Circuits</p>
+        <p class="tutor-meta">Diploma in Electrical Eng, 3rd year</p>
+        <p class="tutor-rate">R170 <span>/ hour</span></p>
+        <a href="contact.html" class="btn btn-outline btn-sm">View Profile</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Session types &amp; pricing</h2>
+    <table class="pricing-table">
+      <caption>Typical rates — individual tutors may vary</caption>
+      <thead>
+        <tr>
+          <th scope="col">Session type</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Group size</th>
+          <th scope="col">Typical rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One-on-one</td>
+          <td>1 hour</td>
+          <td>1 student</td>
+          <td>R140 – R200</td>
+        </tr>
+        <tr>
+          <td>Small group</td>
+          <td>1.5 hours</td>
+          <td>2 – 4 students</td>
+          <td>R80 – R120 pp</td>
+        </tr>
+        <tr>
+          <td>Exam prep intensive</td>
+          <td>3 hours</td>
+          <td>1 – 6 students</td>
+          <td>R100 – R160 pp</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-vu">VU</span><span class="logo-tutors">Tutors</span>
+      <p>Peer tutoring, by VUT students, for VUT students.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#tutors">Find a Tutor</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Open to</h4>
+      <ul>
+        <li>NSFAS-funded students</li>
+        <li>Bursary-funded students</li>
+        <li>Self-funded students</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Student Centre, VUT Vanderbijlpark Campus</p>
+      <p>Andries Potgieter Blvd, Vanderbijlpark, 1911</p>
+      <p>016 950 9000</p>
+      <ul class="footer-social">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter/X</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 VUTutors. This is a fictional demo platform created for an academic project, not an official VUT service.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
